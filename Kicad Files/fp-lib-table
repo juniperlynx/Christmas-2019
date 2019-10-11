@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "BC-2003 Battery Strap")(type KiCad)(uri "${KIPRJMOD}/BC-2003 Battery Strap.pretty")(options "")(descr ""))
+  (lib (name "JS202011 Slide Switch")(type KiCad)(uri "${KIPRJMOD}/JS202011 Slide Switch.pretty")(options "")(descr ""))
+  (lib (name "Merry Xmas")(type KiCad)(uri "${KIPRJMOD}/Merry Xmas.pretty")(options "")(descr ""))
+  (lib (name "Juniper Logo")(type KiCad)(uri "${KIPRJMOD}/Juniper Logo.pretty")(options "")(descr ""))
+)

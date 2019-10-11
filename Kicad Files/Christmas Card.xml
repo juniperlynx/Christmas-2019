@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/juniper/Documents/Projects/Christmas 2019/Christmas Card/Christmas Card.sch</source>
+    <date>Mon 30 Sep 2019 07:22:36 PM MDT</date>
+    <tool>Eeschema 5.1.4-e60b266~84~ubuntu19.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>2019 Christmas Card</title>
+        <company/>
+        <rev>0.01</rev>
+        <date>09/25/2019</date>
+        <source>Christmas Card.sch</source>
+        <comment number="1" value="By Juniper"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>CR2032</value>
+      <footprint>BC-2003 Battery Strap:BatteryStrap BC-2003-G-TR</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8C1116</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>ATtiny84-20SSU</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATtiny" part="ATtiny84-20SSU" description="20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, SOIC-14"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8C25CB</tstamp>
+    </comp>
+    <comp ref="LED1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8C75A1</tstamp>
+    </comp>
+    <comp ref="LED9">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8CA536</tstamp>
+    </comp>
+    <comp ref="LED15">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8CA540</tstamp>
+    </comp>
+    <comp ref="LED19">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8CC876</tstamp>
+    </comp>
+    <comp ref="LED2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8D51BA</tstamp>
+    </comp>
+    <comp ref="LED3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8D51CE</tstamp>
+    </comp>
+    <comp ref="LED11">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8D51D8</tstamp>
+    </comp>
+    <comp ref="LED17">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8D51E2</tstamp>
+    </comp>
+    <comp ref="LED10">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7BD6</tstamp>
+    </comp>
+    <comp ref="LED4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7BE0</tstamp>
+    </comp>
+    <comp ref="LED5">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7BF4</tstamp>
+    </comp>
+    <comp ref="LED13">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7BFE</tstamp>
+    </comp>
+    <comp ref="LED16">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7C12</tstamp>
+    </comp>
+    <comp ref="LED12">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7C1C</tstamp>
+    </comp>
+    <comp ref="LED6">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7C26</tstamp>
+    </comp>
+    <comp ref="LED7">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8E7C3A</tstamp>
+    </comp>
+    <comp ref="LED20">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F04B0</tstamp>
+    </comp>
+    <comp ref="LED18">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F04BA</tstamp>
+    </comp>
+    <comp ref="LED14">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F04C4</tstamp>
+    </comp>
+    <comp ref="LED8">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F04CE</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>68</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8F8CC7</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>68</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FD82E</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>68</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FE06B</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>68</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FEC66</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>68</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FF4B0</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_SMD:SW_SPST_PTS645</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90A757</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_SMD:SW_SPST_PTS645</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90B010</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAEAE80</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAEB3B7</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DCB1CE4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>ISP</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DCEB63D</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>PWR</value>
+      <footprint>JS202011 Slide Switch:SlideSwitch JS202011SQCN</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E0A6C1E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_ATtiny" part="ATtiny24V-10SSU">
+      <aliases>
+        <alias>ATtiny24-20SSU</alias>
+        <alias>ATtiny24A-SSU</alias>
+        <alias>ATtiny44V-10SSU</alias>
+        <alias>ATtiny44-20SSU</alias>
+        <alias>ATtiny44A-SSU</alias>
+        <alias>ATtiny84V-10SSU</alias>
+        <alias>ATtiny84-20SSU</alias>
+        <alias>ATtiny84A-SSU</alias>
+      </aliases>
+      <description>10MHz, 2kB Flash, 128B SRAM, 128B EEPROM, debugWIRE, SOIC-14</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATtiny24V-10SSU</field>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="XTAL1/PB0" type="3state"/>
+        <pin num="3" name="XTAL2/PB1" type="3state"/>
+        <pin num="4" name="~RESET~/PB3" type="3state"/>
+        <pin num="5" name="PB2" type="3state"/>
+        <pin num="6" name="PA7" type="3state"/>
+        <pin num="7" name="PA6" type="3state"/>
+        <pin num="8" name="PA5" type="3state"/>
+        <pin num="9" name="PA4" type="3state"/>
+        <pin num="10" name="PA3" type="3state"/>
+        <pin num="11" name="PA2" type="3state"/>
+        <pin num="12" name="PA1" type="3state"/>
+        <pin num="13" name="AREF/PA0" type="3state"/>
+        <pin num="14" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPDT_x2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_ATtiny">
+      <uri>/usr/share/kicad/library/MCU_Microchip_ATtiny.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/library/Switch.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(R6-Pad1)">
+      <node ref="SW2" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="2" name="Net-(R7-Pad1)">
+      <node ref="U1" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="3" name="+BATT">
+      <node ref="U1" pin="1"/>
+      <node ref="SW1" pin="6"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="J1" pin="2"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(LED10-Pad1)">
+      <node ref="U1" pin="13"/>
+      <node ref="LED20" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="LED10" pin="1"/>
+      <node ref="LED16" pin="1"/>
+      <node ref="LED2" pin="1"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="R6" pin="2"/>
+      <node ref="J1" pin="6"/>
+      <node ref="R7" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="U1" pin="14"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(LED1-Pad1)">
+      <node ref="LED18" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="LED12" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="LED1" pin="1"/>
+      <node ref="LED4" pin="1"/>
+    </net>
+    <net code="7" name="Net-(LED14-Pad1)">
+      <node ref="LED9" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="LED14" pin="1"/>
+      <node ref="LED6" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="LED3" pin="1"/>
+    </net>
+    <net code="8" name="Net-(BT1-Pad1)">
+      <node ref="SW1" pin="5"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(SW1-Pad4)">
+      <node ref="SW1" pin="4"/>
+    </net>
+    <net code="10" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="12" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="13" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="14" name="Net-(J1-Pad3)">
+      <node ref="U1" pin="9"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="15" name="Net-(J1-Pad1)">
+      <node ref="U1" pin="8"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="16" name="Net-(LED11-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="LED8" pin="1"/>
+      <node ref="LED15" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="LED5" pin="1"/>
+      <node ref="LED11" pin="1"/>
+    </net>
+    <net code="17" name="Net-(LED10-Pad2)">
+      <node ref="LED13" pin="2"/>
+      <node ref="LED5" pin="2"/>
+      <node ref="LED4" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="LED10" pin="2"/>
+    </net>
+    <net code="18" name="Net-(LED12-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="LED12" pin="2"/>
+      <node ref="LED6" pin="2"/>
+      <node ref="LED7" pin="2"/>
+      <node ref="LED16" pin="2"/>
+    </net>
+    <net code="19" name="Net-(LED14-Pad2)">
+      <node ref="LED14" pin="2"/>
+      <node ref="LED18" pin="2"/>
+      <node ref="LED8" pin="2"/>
+      <node ref="LED20" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="20" name="Net-(LED13-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="LED7" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="LED19" pin="1"/>
+      <node ref="LED13" pin="1"/>
+      <node ref="LED17" pin="1"/>
+    </net>
+    <net code="21" name="Net-(LED11-Pad2)">
+      <node ref="R2" pin="1"/>
+      <node ref="LED3" pin="2"/>
+      <node ref="LED11" pin="2"/>
+      <node ref="LED2" pin="2"/>
+      <node ref="LED17" pin="2"/>
+    </net>
+    <net code="22" name="Net-(LED1-Pad2)">
+      <node ref="R1" pin="1"/>
+      <node ref="LED15" pin="2"/>
+      <node ref="LED9" pin="2"/>
+      <node ref="LED1" pin="2"/>
+      <node ref="LED19" pin="2"/>
+    </net>
+  </nets>
+</export>
