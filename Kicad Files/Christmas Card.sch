@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery_Cell BT1
+L Christmas-Card-rescue:Battery_Cell-Device BT1
 U 1 1 5D8C1116
 P 2300 4300
 F 0 "BT1" H 2418 4396 50  0000 L CNN
@@ -26,7 +26,7 @@ F 3 "~" V 2300 4360 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny84-20SSU U1
+L Christmas-Card-rescue:ATtiny84-20SSU-MCU_Microchip_ATtiny U1
 U 1 1 5D8C25CB
 P 4650 3100
 F 0 "U1" H 4121 3146 50  0000 R CNN
@@ -37,7 +37,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8006.pdf" H 4650 3100 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED LED1
+L Christmas-Card-rescue:LED-Device LED1
 U 1 1 5D8C75A1
 P 6500 2750
 F 0 "LED1" V 6539 2632 50  0000 R CNN
@@ -48,7 +48,7 @@ F 3 "~" H 6500 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED9
+L Christmas-Card-rescue:LED-Device LED9
 U 1 1 5D8CA536
 P 6500 3250
 F 0 "LED9" V 6539 3132 50  0000 R CNN
@@ -59,7 +59,7 @@ F 3 "~" H 6500 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED15
+L Christmas-Card-rescue:LED-Device LED15
 U 1 1 5D8CA540
 P 6500 3750
 F 0 "LED15" V 6539 3632 50  0000 R CNN
@@ -70,7 +70,7 @@ F 3 "~" H 6500 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED19
+L Christmas-Card-rescue:LED-Device LED19
 U 1 1 5D8CC876
 P 6500 4250
 F 0 "LED19" V 6539 4132 50  0000 R CNN
@@ -81,7 +81,7 @@ F 3 "~" H 6500 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED2
+L Christmas-Card-rescue:LED-Device LED2
 U 1 1 5D8D51BA
 P 7000 2250
 F 0 "LED2" V 7039 2132 50  0000 R CNN
@@ -92,7 +92,7 @@ F 3 "~" H 7000 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED3
+L Christmas-Card-rescue:LED-Device LED3
 U 1 1 5D8D51CE
 P 7000 3250
 F 0 "LED3" V 7039 3132 50  0000 R CNN
@@ -103,7 +103,7 @@ F 3 "~" H 7000 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED11
+L Christmas-Card-rescue:LED-Device LED11
 U 1 1 5D8D51D8
 P 7000 3750
 F 0 "LED11" V 7039 3632 50  0000 R CNN
@@ -114,7 +114,7 @@ F 3 "~" H 7000 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED17
+L Christmas-Card-rescue:LED-Device LED17
 U 1 1 5D8D51E2
 P 7000 4250
 F 0 "LED17" V 7039 4132 50  0000 R CNN
@@ -125,7 +125,7 @@ F 3 "~" H 7000 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED10
+L Christmas-Card-rescue:LED-Device LED10
 U 1 1 5D8E7BD6
 P 7500 2250
 F 0 "LED10" V 7539 2132 50  0000 R CNN
@@ -136,7 +136,7 @@ F 3 "~" H 7500 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED4
+L Christmas-Card-rescue:LED-Device LED4
 U 1 1 5D8E7BE0
 P 7500 2750
 F 0 "LED4" V 7539 2632 50  0000 R CNN
@@ -147,7 +147,7 @@ F 3 "~" H 7500 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED5
+L Christmas-Card-rescue:LED-Device LED5
 U 1 1 5D8E7BF4
 P 7500 3750
 F 0 "LED5" V 7539 3632 50  0000 R CNN
@@ -158,7 +158,7 @@ F 3 "~" H 7500 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED13
+L Christmas-Card-rescue:LED-Device LED13
 U 1 1 5D8E7BFE
 P 7500 4250
 F 0 "LED13" V 7539 4132 50  0000 R CNN
@@ -169,7 +169,7 @@ F 3 "~" H 7500 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED16
+L Christmas-Card-rescue:LED-Device LED16
 U 1 1 5D8E7C12
 P 8000 2250
 F 0 "LED16" V 8039 2132 50  0000 R CNN
@@ -180,7 +180,7 @@ F 3 "~" H 8000 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED12
+L Christmas-Card-rescue:LED-Device LED12
 U 1 1 5D8E7C1C
 P 8000 2750
 F 0 "LED12" V 8039 2632 50  0000 R CNN
@@ -191,7 +191,7 @@ F 3 "~" H 8000 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED6
+L Christmas-Card-rescue:LED-Device LED6
 U 1 1 5D8E7C26
 P 8000 3250
 F 0 "LED6" V 8039 3132 50  0000 R CNN
@@ -202,7 +202,7 @@ F 3 "~" H 8000 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED7
+L Christmas-Card-rescue:LED-Device LED7
 U 1 1 5D8E7C3A
 P 8000 4250
 F 0 "LED7" V 8039 4132 50  0000 R CNN
@@ -213,7 +213,7 @@ F 3 "~" H 8000 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED20
+L Christmas-Card-rescue:LED-Device LED20
 U 1 1 5D8F04B0
 P 8500 2250
 F 0 "LED20" V 8539 2132 50  0000 R CNN
@@ -224,7 +224,7 @@ F 3 "~" H 8500 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED18
+L Christmas-Card-rescue:LED-Device LED18
 U 1 1 5D8F04BA
 P 8500 2750
 F 0 "LED18" V 8539 2632 50  0000 R CNN
@@ -235,7 +235,7 @@ F 3 "~" H 8500 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED14
+L Christmas-Card-rescue:LED-Device LED14
 U 1 1 5D8F04C4
 P 8500 3250
 F 0 "LED14" V 8539 3132 50  0000 R CNN
@@ -246,7 +246,7 @@ F 3 "~" H 8500 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED LED8
+L Christmas-Card-rescue:LED-Device LED8
 U 1 1 5D8F04CE
 P 8500 3750
 F 0 "LED8" V 8539 3632 50  0000 R CNN
@@ -257,7 +257,7 @@ F 3 "~" H 8500 3750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
+L Christmas-Card-rescue:R-Device R1
 U 1 1 5D8F8CC7
 P 6500 2250
 F 0 "R1" H 6570 2296 50  0000 L CNN
@@ -268,7 +268,7 @@ F 3 "~" H 6500 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L Christmas-Card-rescue:R-Device R2
 U 1 1 5D8FD82E
 P 7000 2750
 F 0 "R2" H 7070 2796 50  0000 L CNN
@@ -279,7 +279,7 @@ F 3 "~" H 7000 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L Christmas-Card-rescue:R-Device R3
 U 1 1 5D8FE06B
 P 7500 3250
 F 0 "R3" H 7570 3296 50  0000 L CNN
@@ -290,7 +290,7 @@ F 3 "~" H 7500 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L Christmas-Card-rescue:R-Device R4
 U 1 1 5D8FEC66
 P 8000 3750
 F 0 "R4" H 8070 3796 50  0000 L CNN
@@ -301,7 +301,7 @@ F 3 "~" H 8000 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L Christmas-Card-rescue:R-Device R5
 U 1 1 5D8FF4B0
 P 8500 4250
 F 0 "R5" H 8570 4296 50  0000 L CNN
@@ -312,7 +312,7 @@ F 3 "~" H 8500 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L Christmas-Card-rescue:SW_Push-Switch SW2
 U 1 1 5D90A757
 P 6850 5000
 F 0 "SW2" H 6850 5285 50  0000 C CNN
@@ -323,7 +323,7 @@ F 3 "~" H 6850 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW3
+L Christmas-Card-rescue:SW_Push-Switch SW3
 U 1 1 5D90B010
 P 7850 5000
 F 0 "SW3" H 7850 5285 50  0000 C CNN
@@ -605,7 +605,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2500 8000 2500
 $Comp
-L power:+BATT #PWR0101
+L Christmas-Card-rescue:+BATT-power #PWR0101
 U 1 1 5DAB74AD
 P 2650 2900
 F 0 "#PWR0101" H 2650 2750 50  0001 C CNN
@@ -616,7 +616,7 @@ F 3 "" H 2650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0102
+L Christmas-Card-rescue:+BATT-power #PWR0102
 U 1 1 5DABE4FE
 P 7150 4900
 F 0 "#PWR0102" H 7150 4750 50  0001 C CNN
@@ -627,7 +627,7 @@ F 3 "" H 7150 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0103
+L Christmas-Card-rescue:+BATT-power #PWR0103
 U 1 1 5DABEB7C
 P 8150 4900
 F 0 "#PWR0103" H 8150 4750 50  0001 C CNN
@@ -646,7 +646,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 5000 7150 4900
 $Comp
-L Device:R R7
+L Christmas-Card-rescue:R-Device R7
 U 1 1 5DAEAE80
 P 7500 5250
 F 0 "R7" H 7570 5296 50  0000 L CNN
@@ -657,7 +657,7 @@ F 3 "~" H 7500 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L Christmas-Card-rescue:R-Device R6
 U 1 1 5DAEB3B7
 P 6500 5250
 F 0 "R6" H 6570 5296 50  0000 L CNN
@@ -704,7 +704,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4700 6500 4700
 $Comp
-L power:GND #PWR0104
+L Christmas-Card-rescue:GND-power #PWR0104
 U 1 1 5DC5D188
 P 6500 5500
 F 0 "#PWR0104" H 6500 5250 50  0001 C CNN
@@ -715,7 +715,7 @@ F 3 "" H 6500 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L Christmas-Card-rescue:GND-power #PWR0105
 U 1 1 5DC5D608
 P 7500 5500
 F 0 "#PWR0105" H 7500 5250 50  0001 C CNN
@@ -730,7 +730,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 5500 6500 5400
 $Comp
-L power:GND #PWR0106
+L Christmas-Card-rescue:GND-power #PWR0106
 U 1 1 5DC8071B
 P 2300 4600
 F 0 "#PWR0106" H 2300 4350 50  0001 C CNN
@@ -741,7 +741,7 @@ F 3 "" H 2300 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Christmas-Card-rescue:C-Device C1
 U 1 1 5DCB1CE4
 P 3050 3750
 F 0 "C1" H 3165 3796 50  0000 L CNN
@@ -756,7 +756,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 3000 3050 3600
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
+L Christmas-Card-rescue:Conn_02x03_Odd_Even-Connector_Generic J1
 U 1 1 5DCEB63D
 P 4700 5300
 F 0 "J1" H 4750 5617 50  0000 C CNN
@@ -801,7 +801,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 5300 5000 5300
 $Comp
-L power:GND #PWR0107
+L Christmas-Card-rescue:GND-power #PWR0107
 U 1 1 5DDD352C
 P 5250 5500
 F 0 "#PWR0107" H 5250 5250 50  0001 C CNN
@@ -812,7 +812,7 @@ F 3 "" H 5250 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0108
+L Christmas-Card-rescue:+BATT-power #PWR0108
 U 1 1 5DDD396C
 P 5250 5050
 F 0 "#PWR0108" H 5250 4900 50  0001 C CNN
@@ -831,7 +831,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 5400 5250 5500
 $Comp
-L power:GND #PWR0109
+L Christmas-Card-rescue:GND-power #PWR0109
 U 1 1 5DDFB0E0
 P 4650 4100
 F 0 "#PWR0109" H 4650 3850 50  0001 C CNN
@@ -842,7 +842,7 @@ F 3 "" H 4650 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0110
+L Christmas-Card-rescue:+BATT-power #PWR0110
 U 1 1 5DDFD2F3
 P 4650 2100
 F 0 "#PWR0110" H 4650 1950 50  0001 C CNN
@@ -874,7 +874,7 @@ Connection ~ 6500 5000
 Wire Wire Line
 	6500 5000 6500 4700
 $Comp
-L Switch:SW_DPDT_x2 SW1
+L Christmas-Card-rescue:SW_DPDT_x2-Switch SW1
 U 1 1 5E0A6C1E
 P 2550 3300
 F 0 "SW1" V 2596 3112 50  0000 R CNN
@@ -885,7 +885,7 @@ F 3 "~" H 2550 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW1
+L Christmas-Card-rescue:SW_DPDT_x2-Switch SW1
 U 2 1 5E0A7978
 P 2050 3300
 F 0 "SW1" V 2100 3500 50  0000 L CNN
@@ -918,7 +918,7 @@ Connection ~ 2300 4500
 Wire Wire Line
 	2300 4500 2300 4600
 $Comp
-L power:PWR_FLAG #FLG0101
+L Christmas-Card-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5E144AF7
 P 3000 5600
 F 0 "#FLG0101" H 3000 5675 50  0001 C CNN
@@ -929,7 +929,7 @@ F 3 "~" H 3000 5600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L Christmas-Card-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5E14903B
 P 2500 5500
 F 0 "#FLG0102" H 2500 5575 50  0001 C CNN
@@ -940,7 +940,7 @@ F 3 "~" H 2500 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L Christmas-Card-rescue:GND-power #PWR0111
 U 1 1 5E149A52
 P 2500 5600
 F 0 "#PWR0111" H 2500 5350 50  0001 C CNN
@@ -951,7 +951,7 @@ F 3 "" H 2500 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR0112
+L Christmas-Card-rescue:+BATT-power #PWR0112
 U 1 1 5E149FD7
 P 3000 5500
 F 0 "#PWR0112" H 3000 5350 50  0001 C CNN
