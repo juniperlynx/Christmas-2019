@@ -14,17 +14,22 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
+#include <string.h>
 #include "christmasfont.h"
 
 // Sets number of LEDs and rows / cols for display routine
 #define NUM_LEDS 20
 #define NUM_ROWS 5
+#define NUM_COLS 4
+
+// Sets text for greeting
+#define GREETING_STRING "HELLO WORLD! "
 
 // Declare variable to hold surrent phase of screen update
 volatile uint8_t phase = 0;
 
 // Declare screen VRAM, least significant 5 bits are columns of screen
-volatile uint8_t display[4] = {0x00, 0x00, 0x00, 0x00};
+volatile uint8_t display[NUM_COLS] = {0x00, 0x00, 0x00, 0x00};
 
 // Sets up DDR, Prescaler, and interrupts
 void christmasInit(void) {
@@ -32,10 +37,10 @@ void christmasInit(void) {
     DDRA = 0;
     DDRB &= ~(_BV(DDB0) | _BV(DDB1));
 
-    // Initialize Timer0
+    // Initialize Timer1
     cli();         // Disable global interrupts
-    TCCR1A = 0;    // Clear TCCR0A
-    TCCR1B = 0;    // Clear TCCR0B
+    TCCR1A = 0;    // Clear TCCR1A
+    TCCR1B = 0;    // Clear TCCR1B
 
     // Set prescaler to 1 and WGM 13:10 to 0100 (CTC)
     TCCR1B |= _BV(CS10) | _BV(WGM12);
@@ -56,7 +61,8 @@ void christmasInit(void) {
     PRR |= _BV(PRADC) | _BV(PRUSI);
 }
 
-// Lights an individual LED as specified. I know this is uncreative, but eh...
+// Lights an individual LED as specified. Expects PORTA and DDRA to be cleared first.
+// I know this is uncreative, but eh...
 // Physically mapped as follows:
 //     4  9  14 19
 //     3  8  13 18
@@ -64,10 +70,6 @@ void christmasInit(void) {
 //     1  6  11 16
 //     0  5  10 15
 void lightLED(uint8_t led) {
-    // Clear DDRA and PORTA
-    DDRA = 0;
-    PORTA = 0;
-
     // Set needed bits
     switch (led) {
         case 0 :
@@ -155,6 +157,10 @@ void lightLED(uint8_t led) {
 
 // Timer0 ISR
 ISR(TIM1_COMPA_vect) {
+    // Clear DDRA and PORTA
+    DDRA = 0;
+    PORTA = 0;
+
     // Light current phase's LED if a one is present in the corresponding bit
     if (display[phase / NUM_ROWS] >> (phase % NUM_ROWS) & 0x01) {
         lightLED(phase);
@@ -168,8 +174,9 @@ ISR(TIM1_COMPA_vect) {
 }
 
 int main(void) {
-    int i;
-    int currentchar = 0;
+    int column;
+    int stringindex;
+    char greeting[] = GREETING_STRING;
 
     // Setup DDRs, interrupts, &c
     christmasInit();
@@ -178,13 +185,11 @@ int main(void) {
 
     // Cycle chars, Wait for interrupts
     while(1) {
-        for (int i = 0; i < 4; i++) {
-            display[i] = font[currentchar][i];
-        }
-        _delay_ms(1000);
-        currentchar++;
-        if (currentchar >= 127) {
-            currentchar = 0;
+        for (stringindex = 0; stringindex < strlen(greeting); stringindex++) {
+            for (column = 0; column < NUM_COLS; column++) {
+                display[column] = font[greeting[stringindex]][column];
+            }
+            _delay_ms(500);
         }
     }
 }
