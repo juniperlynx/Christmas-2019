@@ -23,13 +23,13 @@
 #define NUM_COLS 4
 
 // Sets text for greeting
-#define GREETING_STRING "HELLO WORLD! "
+#define GREETING_STRING "zyxwvutsrqponmlkjihgfedcba{|}"
 
 // Declare variable to hold surrent phase of screen update
 volatile uint8_t phase = 0;
 
 // Declare screen VRAM, least significant 5 bits are columns of screen
-volatile uint8_t display[NUM_COLS] = {0x00, 0x00, 0x00, 0x00};
+uint8_t display[NUM_COLS] = {0x00, 0x00, 0x00, 0x00};
 
 // Sets up DDR, Prescaler, and interrupts
 void christmasInit(void) {
