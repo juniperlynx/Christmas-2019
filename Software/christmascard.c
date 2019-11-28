@@ -174,9 +174,11 @@ ISR(TIM1_COMPA_vect) {
 }
 
 int main(void) {
-    int column;
+    const char greeting[] = GREETING_STRING;
+    char scrollbuffer[NUM_COLS * 2];
+    int slice;
     int stringindex;
-    char greeting[] = GREETING_STRING;
+    int column;
 
     // Setup DDRs, interrupts, &c
     christmasInit();
@@ -186,10 +188,33 @@ int main(void) {
     // Cycle chars, Wait for interrupts
     while(1) {
         for (stringindex = 0; stringindex < strlen(greeting); stringindex++) {
+            // Fill scroll buffer with appropriate data for this char
             for (column = 0; column < NUM_COLS; column++) {
-                display[column] = font[greeting[stringindex]][column];
+                scrollbuffer[column] = font[greeting[stringindex]][column];
             }
-            _delay_ms(500);
+
+            // If at the end of the string, fill second char from beginning of greeting
+            if (stringindex + 1 >= strlen(greeting)) {
+                for (column = 0; column < NUM_COLS; column++) {
+                     scrollbuffer[column + NUM_COLS] = font[greeting[0]][column];
+                }
+            }
+            // Otherwise fill second char from next char
+            else {
+                for (column = 0; column < NUM_COLS; column++) {
+                     scrollbuffer[column + NUM_COLS] = font[greeting[stringindex + 1]][column];
+                }
+            }
+
+            // Iterate through each slice of scroll
+            for (slice = 0; slice < NUM_COLS; slice++) {
+                // Copy each column for this slice
+                for (column = 0; column < NUM_COLS; column++) {
+                    display[column] = scrollbuffer[slice + column];
+                }
+                // Delay after each slice
+                _delay_ms(250);
+            }
         }
     }
 }
