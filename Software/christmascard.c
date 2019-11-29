@@ -15,15 +15,10 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <string.h>
-#include "christmasfont.h"
-
-// Sets number of LEDs and rows / cols for display routine
-#define NUM_LEDS 20
-#define NUM_ROWS 5
-#define NUM_COLS 4
+#include "christmasdisplay.h"
 
 // Sets text for greeting
-#define GREETING_STRING "zyxwvutsrqponmlkjihgfedcba{|}"
+#define GREETING_STRING "Hello World!"
 
 // Declare variable to hold surrent phase of screen update
 volatile uint8_t phase = 0;
@@ -61,110 +56,10 @@ void christmasInit(void) {
     PRR |= _BV(PRADC) | _BV(PRUSI);
 }
 
-// Lights an individual LED as specified. Expects PORTA and DDRA to be cleared first.
-// I know this is uncreative, but eh...
-// Physically mapped as follows:
-//     4  9  14 19
-//     3  8  13 18
-//     2  7  12 17
-//     1  6  11 16
-//     0  5  10 15
-void lightLED(uint8_t led) {
-    // Set needed bits
-    switch (led) {
-        case 0 :
-            DDRA |= _BV(PA0) | _BV(PA1);
-            PORTA |= _BV(PA0);
-            break;
-        case 1 :
-            DDRA |= _BV(PA0) | _BV(PA1);
-            PORTA |= _BV(PA1);
-            break;
-        case 2 :
-            DDRA |= _BV(PA0) | _BV(PA2);
-            PORTA |= _BV(PA2);
-            break;
-        case 3 :
-            DDRA |= _BV(PA0) | _BV(PA3);
-            PORTA |= _BV(PA3);
-            break;
-        case 4 :
-            DDRA |= _BV(PA0) | _BV(PA7);
-            PORTA |= _BV(PA7);
-            break;
-        case 5 :
-            DDRA |= _BV(PA0) | _BV(PA2);
-            PORTA |= _BV(PA0);
-            break;
-        case 6 :
-            DDRA |= _BV(PA1) | _BV(PA2);
-            PORTA |= _BV(PA1);
-            break;
-        case 7 :
-            DDRA |= _BV(PA1) | _BV(PA2);
-            PORTA |= _BV(PA2);
-            break;
-        case 8 :
-            DDRA |= _BV(PA1) | _BV(PA3);
-            PORTA |= _BV(PA3);
-            break;
-        case 9 :
-            DDRA |= _BV(PA1) | _BV(PA7);
-            PORTA |= _BV(PA7);
-            break;
-        case 10 :
-            DDRA |= _BV(PA0) | _BV(PA3);
-            PORTA |= _BV(PA0);
-            break;
-        case 11 :
-            DDRA |= _BV(PA1) | _BV(PA3);
-            PORTA |= _BV(PA1);
-            break;
-        case 12 :
-            DDRA |= _BV(PA2) | _BV(PA3);
-            PORTA |= _BV(PA2);
-            break;
-        case 13 :
-            DDRA |= _BV(PA2) | _BV(PA3);
-            PORTA |= _BV(PA3);
-            break;
-        case 14 :
-            DDRA |= _BV(PA2) | _BV(PA7);
-            PORTA |= _BV(PA7);
-            break;
-        case 15 :
-            DDRA |= _BV(PA0) | _BV(PA7);
-            PORTA |= _BV(PA0);
-            break;
-        case 16 :
-            DDRA |= _BV(PA1) | _BV(PA7);
-            PORTA |= _BV(PA1);
-            break;
-        case 17 :
-            DDRA |= _BV(PA2) | _BV(PA7);
-            PORTA |= _BV(PA2);
-            break;
-        case 18 :
-            DDRA |= _BV(PA3) | _BV(PA7);
-            PORTA |= _BV(PA3);
-            break;
-        case 19 :
-            DDRA |= _BV(PA3) | _BV(PA7);
-            PORTA |= _BV(PA7);
-            break;
-    }
-}
-
 // Timer0 ISR
 ISR(TIM1_COMPA_vect) {
-    // Clear DDRA and PORTA
-    DDRA = 0;
-    PORTA = 0;
-
-    // Light current phase's LED if a one is present in the corresponding bit
-    if (display[phase / NUM_ROWS] >> (phase % NUM_ROWS) & 0x01) {
-        lightLED(phase);
-    }
+    // Display current bit
+    displayBit(phase, display);
 
     // Increment phase and iterate for each LED
     phase++;
@@ -177,32 +72,30 @@ int main(void) {
     const char greeting[] = GREETING_STRING;
     char scrollbuffer[NUM_COLS * 2];
     int slice;
-    int stringindex;
+    int strindex;
     int column;
 
     // Setup DDRs, interrupts, &c
     christmasInit();
 
-
-
     // Cycle chars, Wait for interrupts
     while(1) {
-        for (stringindex = 0; stringindex < strlen(greeting); stringindex++) {
+        for (strindex = 0; strindex < strlen(greeting); strindex++) {
             // Fill scroll buffer with appropriate data for this char
             for (column = 0; column < NUM_COLS; column++) {
-                scrollbuffer[column] = font[greeting[stringindex]][column];
+                scrollbuffer[column] = getFontCol(greeting[strindex], column);
             }
 
             // If at the end of the string, fill second char from beginning of greeting
-            if (stringindex + 1 >= strlen(greeting)) {
+            if (strindex + 1 >= strlen(greeting)) {
                 for (column = 0; column < NUM_COLS; column++) {
-                     scrollbuffer[column + NUM_COLS] = font[greeting[0]][column];
+                     scrollbuffer[column + NUM_COLS] = getFontCol(greeting[0], column);
                 }
             }
             // Otherwise fill second char from next char
             else {
                 for (column = 0; column < NUM_COLS; column++) {
-                     scrollbuffer[column + NUM_COLS] = font[greeting[stringindex + 1]][column];
+                    scrollbuffer[column + NUM_COLS] = getFontCol(greeting[strindex + 1], column);
                 }
             }
 
@@ -213,7 +106,7 @@ int main(void) {
                     display[column] = scrollbuffer[slice + column];
                 }
                 // Delay after each slice
-                _delay_ms(250);
+                _delay_ms(200);
             }
         }
     }

@@ -6,7 +6,8 @@ help:
 
 hex:
 	avr-gcc -Os -mmcu=attiny84 -c christmascard.c
-	avr-gcc -mmcu=attiny84 -o christmascard.elf christmascard.o
+	avr-gcc -Os -mmcu=attiny84 -c christmasdisplay.c
+	avr-gcc -mmcu=attiny84 -o christmascard.elf christmascard.o christmasdisplay.o
 	avr-objcopy -O ihex christmascard.elf christmascard.hex
 
 flash:
