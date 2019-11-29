@@ -106,7 +106,9 @@ void lightLED(uint8_t led) {
     }
 }
 
-void displayBit(int phase, uint8_t display[NUM_COLS]) {
+// Displays a bit corresponding to the current phase of the display update
+// if the corresponding bit of the diaplay array is set.
+void displayBit(uint8_t phase, uint8_t display[NUM_COLS]) {
     // Clear DDRA and PORTA
     DDRA = 0;
     PORTA = 0;
@@ -118,14 +120,16 @@ void displayBit(int phase, uint8_t display[NUM_COLS]) {
 }
 
 // Wrapper to grab characters from the font function by column 
-uint8_t getFontCol(char character, int column) {
+uint8_t getFontCol(char character, uint8_t column) {
     // If asking for anything beyond the third column, return zero
     if (column >= NUM_COLS - 1) {
         return 0x00;
     }
+    // If asking for non printable characters, return zero
     else if ((int)character < 32 || (int)character > 126) {
         return 0x00;
-    }    
+    }
+    // Otherwise, return the correct entry from the font variable in christmasfont.h
     else {
         return font[(int)character - 32][column];
     }

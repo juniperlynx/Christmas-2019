@@ -13,5 +13,5 @@
 #define NUM_ROWS 5
 #define NUM_COLS 4
 
-extern void displayBit(int phase, uint8_t display[NUM_COLS]);
-extern uint8_t getFontCol(char character, int column);
+extern void displayBit(uint8_t phase, uint8_t display[NUM_COLS]);
+extern uint8_t getFontCol(char character, uint8_t column);
