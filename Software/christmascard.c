@@ -18,7 +18,7 @@
 #include "christmasdisplay.h"
 
 // Sets text for greeting
-#define GREETING_STRING "Hello World!"
+#define GREETING_STRING "Hello World! "
 
 // Declare variable to hold surrent phase of screen update
 volatile uint8_t phase = 0;

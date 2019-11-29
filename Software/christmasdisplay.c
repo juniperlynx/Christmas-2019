@@ -119,10 +119,14 @@ void displayBit(int phase, uint8_t display[NUM_COLS]) {
 
 // Wrapper to grab characters from the font function by column 
 uint8_t getFontCol(char character, int column) {
+    // If asking for anything beyond the third column, return zero
     if (column >= NUM_COLS - 1) {
         return 0x00;
     }
+    else if ((int)character < 32 || (int)character > 126) {
+        return 0x00;
+    }    
     else {
-        return font[character][column];
+        return font[(int)character - 32][column];
     }
 }
